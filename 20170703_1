@@ -1,0 +1,14 @@
+synchronized 锁重入：使用sychronized关键字时，当一个线程得到一个对象锁后，再次请求此对象锁时是可以再次得到该对象的锁的
+                     也证明了sychronized方法/块的内部调用本类的其他sychronized方法/块时，是永远可以得到锁的。
+                     支持父子类继承。
+                     
+                     sychronized 不具有继承性。
+                     
+                     
+synchronized同步语句块：synchronized方法当A线程调用同步方法执行一个长时间的任务，此时B线程必须等待比较长的时间。在这样情况下可以使用synchronized同步语句块来解决。
+synchronized方法是对当前对象进行加锁，而synchronized代码块是对某一个对象进行加锁。
+sychronized是对象级的监视器：当一个线程访问obje的一个synchronized(this)同步代码时，其他线程对同一个object中所有其他synchronized(this)同步代码块的访问将被阻塞
+sychronized关键字加到static静态方法上是给Class类加锁，而sychronized关键字加到非static静态方法上是给对象加锁。
+```java
+  sychronized public static void print(){}
+```
