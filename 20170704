@@ -6,3 +6,10 @@ volatile:强制从公共堆栈中取得变量的值，而不是从线程私有�
 volatile 和 synchronized 的比较：
       1.volatile解决的是变量在多个线程之间的可见性；而synchronized 解决的是多个线程之间访问资源的同步性。
       2.多线程访问volatile不会发生阻塞,synchronized会出现阻塞。
+      
+      
+synchronize:可以使多个线程访问同一个资源具有同步性，而且它还具有将线程工作内存中的私有变量与公共内存中的变量同步的功能。！！！
+      
+      
+      
+      
