@@ -1,0 +1,6 @@
+注解分为两类：
+1.使用注解，即把已经在xml文件中配置好的Bean拿出来用，完成属性、方法的组装；
+  比如@Autowired，@Resource，可以通过byType(@Autowired)、byName(@Resource)的方式获取bean;
+  
+2.一类是注册Bean, @Component,@Repository,@Controller,@Service,@Configration这些注解把要实例化的对象转化成一个Bean
+放在Ioc容器中，等你要使用时，它就会和上面的@Autowired, @Resource配合起来把对象、属性、方法完美组装。
