@@ -63,7 +63,7 @@
  
  
  
- 
+ [静态工厂方法](http://www.cnblogs.com/sluggard/p/4343426.html)
   
  -[标题](#topic)
  
